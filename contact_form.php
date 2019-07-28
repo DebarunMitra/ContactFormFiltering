@@ -19,11 +19,13 @@ $flag=0;
 <head>
 	<title>Contact Form</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <style>
+   <style>
       .header_img
       {
-           background: url('images/sparsh.jpg');
-
+           background: url('images/sparsh.png') no-repeat;
+           position:static;
+           background-size: 100% 100%;
+           width: auto;
       }
       .bg_img
       {
@@ -47,30 +49,33 @@ $flag=0;
       }
       .responsive
       {
-            min-width:113%; 
+            min-width:109%; 
             height:100px; 
             background-size:cover;
             position: initial;
       }
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: 1200px) {
       .responsive
       {
-            width:100%; 
+            width:109%; 
+            height:100px; 
+            background-size:cover;
+            position: initial;
+      }
+       @media only screen and (min-width: 400px) {
+      .responsive
+      {
+            width:113%; 
             height:100px; 
             background-size:cover;
             position: initial;
       }
         }
-     /* .bgimg
-      {
-          background-image: url("images/run.jpg");
-          width: 100%;
-      }*/
   </style>
 </head>
 <body>
     <div class="container" style="width:30%; border-style:solid; border-color: seagreen; border-width: 10px; border-radius:25px;">
-        <img src="images/sparsh.jpg" class="row responsive" style="">
+       <img src="images/sparsh.png" class="row responsive">
         <div class="row bg_img">
    <div class="col-lg-12 col-md-12" style="">
       <h1 class="text-center" style=""><u>Contact Form</u></h1>
@@ -178,5 +183,10 @@ $flag=0;
     </div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                        <script>
+               if ( window.history.replaceState ) {
+                          window.history.replaceState( null, null, window.location.href );
+                         }
+                                   </script>
   </body>
 </html>
